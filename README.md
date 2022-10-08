@@ -1,7 +1,6 @@
 # U2-Hoja-1-EJERCICIO-1
 POO con constructores en JAVA para sacar saldo, transacciones o giros bancarios a una clase Cuenta..
 
-
 1.- Suponemos una clase CajaAhorro que permite mantener el registro de depósitos y giros de una cuenta.
 
     ✅ atributos:      
@@ -15,7 +14,7 @@ POO con constructores en JAVA para sacar saldo, transacciones o giros bancarios 
        • obtenerTransacciones(): retorna la cantidad total de transacciones,
          (giros y depósitos) que se han hecho sobre la cuenta (valor int).
          
-👉🏻 acciones:
+    👉🏻 acciones:
         
     ✅ a) Define un constructor sin parámetros que inicialice el saldo y las transacciones a 0.
 
@@ -30,7 +29,9 @@ POO con constructores en JAVA para sacar saldo, transacciones o giros bancarios 
       CajaAhorro con un saldo inicial de 200. Muestra el saldo y el número de
       transacciones..
       
-      ![1](https://user-images.githubusercontent.com/80227002/194704459-ed05ec1e-bd18-4b78-84ab-c50d737a2218.png)
+      
+ ![1](https://user-images.githubusercontent.com/80227002/194704459-ed05ec1e-bd18-4b78-84ab-c50d737a2218.png)
+
 
 ```java    
 import javax.swing.JOptionPane;
@@ -71,7 +72,9 @@ public class CajaAhorro {
     }
 }
 ```
+
 ![2](https://user-images.githubusercontent.com/80227002/194704469-cdf92684-5b87-4319-8c3b-8b93e6e323d3.png)
+
 
 ```java
 public class Cuenta {
@@ -85,7 +88,8 @@ public class Cuenta {
     double trans;
     public Cuenta(){
     }
-    public Cuenta(double saldo, double saldoInicial, double transacciones, double depositoCuenta, double giroCuenta){                   this.saldoInicial=saldoIni;
+    public Cuenta(double saldo, double saldoInicial, double transacciones, double depositoCuenta, double giroCuenta){                   
+    this.saldoInicial=saldoIni;
     this.saldo=sal;                                 
     this.transacciones=trans; 
     }              
@@ -113,6 +117,7 @@ public class Cuenta {
      this.transacciones=trans; transacciones++;}
 }
 ```
+
 
 ![3](https://user-images.githubusercontent.com/80227002/194704473-6740530b-3e6e-4264-8bce-e535cf903595.png)
 
